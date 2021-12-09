@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body id="login" >
+    
+    <center>
+    <div id="background">
+    <form action="/signupstudent" method="POST" id="background">
+        <h1 style="font-family: cursive; font-size: small;border-radius: 10%; margin-left: 1.5cm; position:absolute;margin-top: 10%; color: seashell;">Student login</h1>
+        <br><br>
+        <b class="form_t"></b><br>
+        <input type="text" name="first_name" class="box" placeholder="Name" required style="position:relative; margin-bottom: -9%; border-radius: 1cm;">
+        <br>
+        <b class="form_t"></b><br>
+        <input type="text" name="last_name" class="box" placeholder="Address" required style="margin-bottom: 0%; border-radius: 1cm;">
+        <br>
+        <b class="form_t"></b><br>
+        <input type="email" name="email" class="box" placeholder="Email" aria-required="true" required style=" border-radius: 1cm;">
+        <br>
+        <b class="form_t"></b><br>
+        <input type="password" name="password" class="box" placeholder="Password" required style=" border-radius: 1cm;">
+        <br>    
+        <input type="number" name="year" class="box" placeholder="Year" required style=" border-radius: 1cm; margin-top: 9%;">
+        <br>
+        <input type="submit" class="reg" value="Register"  style="border-radius: 1CM; margin-top: 9%; font-size: smaller;font-family: cursive;">
+
+        
+        <p style="font-style: italic; font-family: cursive; font-size: small;color: seashell;">OR</p>
+        
+        
+      </form>
+      <center><a href="/gotostudentlogin" ><button style="margin-bottom: 10%; border-radius: 1cm; font-size: smaller;font-family: cursive;">Login student</button></a></center>
+    </div>
+    </center>
+</body>
+</html>

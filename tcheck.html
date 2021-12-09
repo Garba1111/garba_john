@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<a href="base.html"><button></button></a>
+    <body style="background-color: antiquewhite;">
+
+
+        <form action="/gotocourse" method="POST">
+            <input type="text" class="reg" value="{{verify.first_name}}" name="teacher_name" style="display:hidden;">
+            <input type="submit" class="reg" value="add your course"  style="border-radius: 1CM; color: green;">        
+          </form>
+
+
+        <center><p style="background-color: bisque; font-family: cursive;">WELCOME TO UR PROFILE: YOU ARE A TEACHER</p></center>
+
+        <br><br>
+        
+
+        <p>Teacher ID: {{verify.ID}}</p>
+        <p>First name: {{verify.first_name}}</p>
+        <p>Address: {{verify.last_name}}</p>
+        <p>Email: {{verify.email}}</p>
+        <br>
+        <br>
+
+<!--
+        <table>
+            <tr>
+                <th>courses</th>
+                <th>lecturers</th>
+            </tr>
+            {% for i in teachers %}
+            <tr>
+                <td>{{i.course}}</td>
+                <td>{{i.name}}</td>
+            </tr>
+            {% endfor %}        
+        </table>
+
+-->
+
+
+    </body>
+</html>

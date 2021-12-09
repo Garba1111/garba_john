@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <style>
+        .allign{
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:100vw;
+            background-image: url("/static/image/pict.jpg");
+            height: 100vh;
+            position: relative;
+        } 
+    </style>
+</head>
+<body id="login">
+    <!-- <h1 style="text-align: center; color: #030303; padding-top: 20%; font-size: 4.2vw;">RAILWAY-BOOKING<br><br> TRANSPORTATION SYSTEM </h1> -->
+      
+        <center>
+            
+            <div class="align" style="margin-top: 3cm;margin-top: 20%;" >
+           <h1 style="font-family: 'Times New Roman'; font-size: medium;font-style: italic;">Please Login:</h1>
+            <button class="btn_check" style="text-decoration: solid; font-size: larger;cursor: pointer; border-bottom: black;border-radius: 30%; border-style:solid;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px; font-family: 'cursive';font-style: italic; text-decoration-style: wavy;">
+            <a href="/gotostudent" style="color: rgb(253, 4, 4);transition:ease-in-out; text-decoration: wavy;"><span>STUDENTS</span></a></button>
+            <button class="clog_btn" style="text-decoration: solid; font-size: larger;cursor: pointer;text-decoration-style: wavy; border-bottom: black;border-radius: 30%; font-family: cursive;font-style: italic;border-style:solid;border-bottom-left-radius: 40px;border-bottom-right-radius: 40px;">
+            <a href="/gototeacher" style="color: rgb(252, 5, 5); text-decoration: wavy;"><span>LECTURERS</span></a></button>
+          
+            </div> 
+        </center>
+    </div>
+</body>
+</html>

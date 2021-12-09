@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body id="login">
+   
+<div style="margin-left: 40%;">
+    <form action="/loginteacher" method="POST" id="background">
+        <h4><i>{{msg}}</i></h4>
+        <br>
+        <h1 style="font-family: cursive; font-size: smaller;border-radius: 10%; margin-left: 1.5cm; position:absolute; color: seashell;">Login Please</h1>
+        <br>
+        <input type="text" name="first_name"  placeholder="Name" required style="margin-top: 5%;border-radius: 1cm;">
+        
+        <input type="password" name="password"  placeholder="Password" required style="margin-top: 5%;border-radius: 1cm;">
+        
+        <input type="submit"  value="Submit"  style="border-radius: 1CM; margin-top: 5%;margin-bottom: 5%; font-size: smaller;font-family: cursive;">
+
+        
+    
+    </form>
+    </div> 
+</body>
+</html>

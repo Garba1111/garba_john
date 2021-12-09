@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<a href=""><button></button></a>
+    <body style="background-color: antiquewhite;">
+
+
+        
+
+        <center><p style="background-color: bisque; font-family: cursive;">WELCOME TO UR PROFILE: YOU ARE A STUDENT</p></center>
+
+        <br><br>
+
+        <p>Student ID: {{verify.ID}}</p>
+        <p>First name: {{verify.first_name}}</p>
+        <p>Address: {{verify.last_name}}</p>
+        <p>Email: {{verify.email}}</p>
+        <p>Year: {{verify.year}}</p>
+
+        <br>
+        <br>
+
+
+        <center><table border="5">
+            <tr>
+                <th>Teachers_Name</th>
+                <th>Course_Name</th>
+                <th>Course_Code</th>
+                <th>Time of the day</th>
+            </tr>
+            {% for i in courses %}
+            <tr>
+                <td>{{i.teachername}}</td>
+                <td>{{i.coursename}}</td>
+                <td>{{i.coursecode}}</td>
+                <td>{{i.time}}</td>
+            </tr>
+            {% endfor %}        
+        </table>
+
+    </center>
+     <!-- <a href="results.html">
+         <center>
+         <button type="button">
+         <h1 style="position: relative;"> </h1>
+         </button>
+         </center>
+    </a> -->
+
+    </body>
+</html>

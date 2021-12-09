@@ -1,0 +1,117 @@
+        
+        
+       *{
+           margin: 0;
+           padding: 0;
+           outline: 0;
+           vertical-align: baseline;
+           
+       }
+       #login{
+           background-image: url(/static/image/pict.jpg);
+           width: 100%;
+           height: 100%;
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           text-align: center;
+       }
+       #background{
+        background-image: url(/static/image/pic.png);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        text-align: center;
+        background-color: rgb(14, 13, 6);
+        width: 5cm;
+        position: relative;
+        border-radius: 10%; 
+        margin-top: 5%;
+    }
+         .body{
+             background-image: url(/static/image/pict.jpg);
+         }
+         .btn_check{
+            cursor: pointer;
+            background-color: black;
+            height: 60%;
+            width: 25%;
+            border-bottom: black;
+            border-radius: 30%;
+            border-style:solid;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .clog_btn{
+            cursor: pointer;
+            background-color: black;
+            height: 60%;
+            width: 21%;
+            border-bottom: black;
+            border-radius: 30%;
+            border-style:solid;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        .btn_check:hover{
+            background-color: rgb(223, 12, 12);
+            color: black;
+            width: 30%;
+            height: 40%;
+            transition: all ease-in-out 0.7s;
+        }
+        .clog_btn:hover{
+            background-color: rgb(223, 12, 12);
+            color: black;
+            width: 20%;
+            height: 40%;
+            transition: all c 0.7s;
+        }
+        .btn_check span:after{
+            content: '';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.2s;
+        }
+        .btn_check span{
+           cursor: pointer;
+           display: inline-block;
+           position: relative;
+           transition: 0.9s;
+        }
+        .btn_check:hover span{
+            padding-right: 25px;
+        }
+        .btn_check:hover span::after{
+            opacity: 1;
+            right: 0;
+        }
+
+        .clog_btn span:after{
+            content: '';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.2s;
+        }
+        .clog_btn span{
+           cursor: pointer;
+           display: inline-block;
+           position: relative;
+           transition: 0.9s;
+        }
+        .clog_btn:hover span{
+            padding-right: 25px;
+        }
+        .clog_btn:hover span::after{
+            opacity: 1;
+            right: 0;
+        }
+        
